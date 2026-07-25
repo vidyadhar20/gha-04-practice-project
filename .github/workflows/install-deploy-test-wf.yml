@@ -1,0 +1,17 @@
+name: Install Deploy test
+on: workflow_dispatch
+jobs: 
+  install-deploy-test:
+    runs-on: ubuntu-Slim
+    steps: 
+      -  uses: actions/checkout@v6 
+      -  name: install
+         run: "npm install" 
+      -  name: lint
+         run: "npm run lint" 
+      -  name: build
+         run: "npm run build"
+      -  name: test
+         run: "npm run test"
+          
+    
