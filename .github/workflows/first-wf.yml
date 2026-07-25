@@ -2,7 +2,7 @@ name: first workflow
 on: workflow_dispatch
 jobs: 
   name: hello-world-jobs
-  runs.on: Ubuntu-Slim
+  runs-on: Ubuntu-Slim
   steps:
     - step: first step 
       run: echo "Hello world""
