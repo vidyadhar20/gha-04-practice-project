@@ -4,5 +4,5 @@ jobs:
   hello-world-jobs:
     runs-on: Ubuntu-Slim
     steps:
-      - step: first step 
+      - name: first step 
         run: echo "Hello world"
